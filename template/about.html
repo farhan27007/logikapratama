@@ -1,0 +1,52 @@
+<div class="container-fluid tentang-kami" id="home">
+
+	<div class="col-xs-12 hidden-sm hidden-md hidden-lg backup-img-company" data-aos="flip-right">
+		<img src="images/bg-profile-1.jpg" class="img-responsive img-company" alt="">
+	</div>
+
+	<div class="col-md-6 col-sm-7">
+ 
+		<div class="backup-title-about" data-aos="fade-up">
+
+			<div>
+				<h2 class="word-about">
+					Providing
+					<span class="dif-color">the best products and services</span>
+					to the customers
+				</h2>
+
+				<div class="isi-content-layanan custom-content-lh cs-media-content">
+					<p>
+						LOGIKA	PRATAMA established in Jakarta on Aug 2008, specializes in providing technology consulting,	product development, solutions integration and software development.   Our in-depth technical knowledge coupled with Industry experience and the unique methodology enables us to successfully deliver.
+						
+					</p>
+					<p class="read-more-content">
+						In year 2014,LOGIKA expand the service for fleet management system, i.e. M2Fleet.co.id, FMS solution to support logistics, transport and others company to monitor and optimize their asset. 
+						In year 2017, we approach the IoT society, our continued effort and commitment to developing technologies to connect everything over the Internet are about to be fully realized.
+						LOGIKA continues to develop technologies aimed at helping to create a real world platform and services are connected with the Internet, thereby providing our customers’ businesses with greater value.
+					</p>
+				</div>
+			</div>
+			<button class="btn-get-started btn-read-more"><span>Read more</span>&nbsp;<i class="fas fa-angle-down bounce"></i></button>
+		</div>
+	</div>
+
+	<div class="col-md-6 col-sm-5 backup-img-company hidden-xs" data-aos="flip-right">
+		<img src="images/bg-profile-1.jpg" class="img-responsive img-company" alt="">
+	</div>
+
+</div>
+
+<script>
+	$( ".btn-read-more" ).click(function() {
+		$( ".read-more-content" ).slideToggle( "fast" );
+		var $this = $(this);
+		$this.toggleClass("open");
+
+		if ($this.hasClass("open")) {
+			$this.html("Read Less");
+		} else {
+			$this.html("Read more");
+		}
+	});
+</script>
